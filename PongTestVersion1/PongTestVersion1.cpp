@@ -124,7 +124,8 @@ int main() {
 	fill(screen);
 	output(screen);
 	int xpos=15, ypos=20;
-	int dir= rand() % 8 + 1;
+	int dir = 4;
+	//int dir= rand() % 8 + 1;
 	move(xpos, ypos, dir, screen);
 	return 0;
 } 
