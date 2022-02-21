@@ -77,7 +77,7 @@ int bumps(int xpos, int ypos, int dir) {
 }
 
 void move(int xpos, int ypos, int dir, char screen[30][40]) {
-	for (int i = 0; i < 1000; i++) {
+	for (int i = 0; i < 1200; i++) {
 		system("cls");
 		dir=bumps(xpos, ypos, dir);
 		switch (dir) {
@@ -112,7 +112,7 @@ void move(int xpos, int ypos, int dir, char screen[30][40]) {
 		}
 		screen[ypos][xpos] = 'o';
 		output(screen);
-		screen[ypos][xpos] = ' ';
+		screen[ypos][xpos] = '.';
 		
 		cout << xpos << " " << ypos <<" "<<i<< endl;
 
@@ -127,7 +127,7 @@ int main() {
 	int dir= rand() % 8 + 1;
 	move(xpos, ypos, dir, screen);
 	return 0;
-}
+} 
 
 
 
